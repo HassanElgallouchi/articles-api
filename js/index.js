@@ -7,6 +7,12 @@ let getData = async (url) => {
     return await response.json();
 }
 
+let generateRandomColor = () => {
+    let colors = ['16a085','27ae60','2c3e50','f39c12','e74c3c','9b59b6','FB6964','342224','472E32','BDBB99','77B1A9','73A857'];
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    return randomColor;
+}
+console.log(generateRandomColor());
 (async () => {
     section.innerHTML = 'loading...';
 
@@ -21,7 +27,7 @@ section.innerHTML = "";
         <article>
         <div class="image-article">
             <a href="/article.html?id=${post.id}">
-                <img src="https://via.placeholder.com/300x250?text=300x250+MPU" alt="">
+                <img src="https://via.placeholder.com/300/${generateRandomColor()}" alt="">
             </a>
         </div>
         <div class="content-article">

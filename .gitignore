@@ -1,1 +1,15 @@
-/waitingToBeCompleted
+
+#css
+/css/article.css
+/css/user.css
+
+# img
+/img
+
+# js
+/js/article.js
+/js/user.js
+
+# html
+article.html
+user.html
